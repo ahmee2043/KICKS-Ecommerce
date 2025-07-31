@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
+import mainImg from '../../../public/images/assets/HeroSection/main.png';
+import thumb1 from '../../../public/images/assets/HeroSection/thumb-image1.jpg';
+import thumb2 from '../../../public/images/assets/HeroSection/thumb-image2.jpg';
 
 export const HeroSection = () => {
-    const [currentMainImage, setCurrentMainImage] = useState(
-        '../../../public/images/assets/HeroSection/main.png'
-    );
+    const [currentMainImage, setCurrentMainImage] = useState(mainImg);
 
-    const [thumbnails, setThumbnails] = useState([
-        '../../../public/images/assets/HeroSection/thumb-image1.jpg',
-        '../../../public/images/assets/HeroSection/thumb-image2.jpg'
-    ]);
+    const [thumbnails, setThumbnails] = useState([thumb1, thumb2]);
 
     const handleThumbnailClick = (clickedThumbnailUrl, clickedThumbnailIndex) => {
         const prevMainImage = currentMainImage;
