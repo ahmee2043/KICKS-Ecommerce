@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Registration from './Components/AuthScreen/registrationPage/Registration';
-import Layout from './Components/reuseable/layout/layout';
+import Layout from './Components/reuseable/layout/Layout';
 import Login from './Components/AuthScreen/LoginPage/Login'; 
 import Forget from './Components/AuthScreen/ForgetPage/Forget'; 
 import HomePage from './Pages/HomePage/HomePage';
